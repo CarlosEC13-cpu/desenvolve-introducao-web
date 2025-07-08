@@ -1,0 +1,35 @@
+/*1- definir cor */
+a {
+    color: red;
+}
+ /* 1- trocar cor */
+a:hover {
+    color: lime;
+}
+
+
+/* 2- Definir fonte para o paragrafo */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* 2- Deixa em negrito apenas o parágrafo que vem logo após um h1 */
+h1 + p {
+    font-weight: bold;
+}
+
+
+/* 3- Regra padrão para a classe .destaque */
+.destaque {
+    font-family: Arial, sans-serif;
+}
+
+/* 3-  Regra para a classe .destaque quando for um parágrafo */
+p.destaque {
+    font-weight: bold;
+}
+
+/* 3- Regra para a classe .destaque quando for um strong */
+strong.destaque {
+    color: red;
+}
