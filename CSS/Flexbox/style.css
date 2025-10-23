@@ -1,0 +1,204 @@
+body {
+    background-color: #F5F5DC;
+    color: #556B2F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    width: 80%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+p {
+    text-indent: 1em;
+}
+
+#design-archives {
+    
+    position: absolute;
+    top: 560px; 
+    left: 62%; 
+
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+header {
+    height: 550px;
+
+    background-color: #556B2F; 
+    color: #F5F5DC;           
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    padding: 0 1em;
+}
+
+header h1, header h2 {
+    color: #F5F5DC;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+
+main p {
+    line-height: 1.5;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    
+    border-right: 1px solid #1f295c;
+    
+    padding-right: 2%;
+}
+
+/* Regra original apenas para o menu de navegação lateral */
+nav ul {
+    list-style-type: none;
+    padding-left: 0; 
+    text-align: center;
+}
+
+/* 1. Aplica flexbox no rodapé */
+footer ul {
+    list-style-type: none;
+    padding-left: 0; 
+    
+    display: flex;
+    flex-wrap: wrap; /* Trata a quebra de linha */
+    justify-content: center; /* Centraliza os links */
+    gap: 1em; /* Espaçamento entre eles */
+}
+
+/* Regra original apenas para o menu de navegação lateral */
+nav li {
+    margin-bottom: 1em;
+}
+
+/* Remove a margem do item de lista do rodapé, já que o 'gap' controla o espaço */
+footer li {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #556B2F;
+    color: #F5F5DC;
+
+    margin: 4%;
+    padding: 2em; 
+}
+
+footer a {
+    border: 2px solid #F5F5DC;
+    padding: 0.5em;
+    
+    color: #F5F5DC;
+    text-decoration: none; 
+    font-weight: normal;
+    
+    /* 1.a. Define um mesmo tamanho (largura) para os links */
+    width: 150px; /* Define uma largura fixa */
+    display: inline-block; /* Garante que o padding e a largura sejam aplicados */
+    box-sizing: border-box; /* Inclui padding/borda na largura total */
+    text-align: center; /* Centraliza o texto dentro do link */
+}
+
+footer a:hover {
+    background-color: #F5F5DC;
+    color: #556B2F;
+}
+
+/* 2, 3 e 4. Seções de Benefícios e Participação */
+/* (Novas classes que você precisará adicionar ao seu HTML) */
+
+.benefits,
+.participation {
+    /* 4. Inclui linhas no topo e embaixo */
+    border-top: 1px solid #1f295c;
+    border-bottom: 1px solid #1f295c;
+    
+    /* Adiciona um preenchimento para as seções não colarem nas bordas */
+    padding: 1.5em 0;
+    margin-top: 1.5em;
+    /* Garante que o box-sizing não afete o layout geral */
+    box-sizing: border-box; 
+}
+
+/* 4.a. Remove a borda duplicada entre as duas seções */
+/* (Assume que .participation vem logo após .benefits no HTML) */
+.benefits + .participation {
+    border-top: none;
+}
+
+/* 2. Layout Flexbox para "Benefícios" */
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    /* 2.b. Título centralizado verticalmente */
+    align-items: center; 
+}
+
+.benefits-text {
+    /* 2.c. Texto ocupa 70% */
+    flex-basis: 70%;
+}
+
+.benefits-title {
+    /* 2.c. Título ocupa 30% */
+    flex-basis: 30%;
+    text-align: right; /* Alinha o título à direita */
+    padding-right: 1em;
+}
+
+/* 3. Layout Flexbox para "Participação" */
+.participation {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    justify-content: space-around;
+}
+
+.participation-item {
+    /* 3.a. Cada item ocupa 50% (ou perto disso) */
+    flex-basis: 48%; /* Usa 48% para dar um pequeno espaço */
+    box-sizing: border-box; 
+    padding: 1em;
+    margin-bottom: 1em;
+    
+    /* 3.b. Centraliza o conteúdo (título) verticalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px; /* Garante uma altura mínima */
+}
+
+
+abbr {
+    font-variant: small-caps;
+}
+
